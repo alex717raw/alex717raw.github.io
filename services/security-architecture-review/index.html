@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Подключение шрифтов Outfit и JetBrains Mono из Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><meta name="description" content="Глубокий обзор критичных интеграций, компонентов, trust boundaries и control design."><meta name="robots" content="index,follow"><link rel="canonical" href="https://amisoft.am/services/security-architecture-review/"><link rel="alternate" hreflang="ru" href="https://amisoft.am/services/security-architecture-review/"><link rel="alternate" hreflang="x-default" href="https://amisoft.am/services/security-architecture-review/"><meta property="og:title" content="Обзор архитектуры безопасности - AmiSoft"><meta property="og:description" content="Глубокий обзор критичных интеграций, компонентов, trust boundaries и control design."><meta property="og:type" content="website"><meta property="og:url" content="https://amisoft.am/services/security-architecture-review/"><title>Обзор архитектуры безопасности - AmiSoft</title><link rel="stylesheet" href="/_astro/BaseLayout.CGlU92Rh.css"></head> <body> <a class="skip-link" href="#content">Перейти к содержанию</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="AmiSoft главная"> <span class="brand-mark" aria-hidden="true">A</span> <span>AmiSoft</span> </a> <button class="mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false" id="menuToggle"> <span class="hamburger-bar"></span> <span class="hamburger-bar"></span> <span class="hamburger-bar"></span> </button> <nav class="nav" id="mainNav" aria-label="Основная навигация"> <ul class="nav-list"> <li class="nav-item "> <a href="/" class="nav-link"> Главная </a> </li><li class="nav-item has-children">  <a href="/solutions/" class="nav-link dropdown-trigger"> Решения <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/solutions/" class="overview-link"> Все решения → </a> </li><li class="dropdown-item"> <a href="/solutions/cloud-and-critical-access/" class> Защита критичных доступов, облака и IAM </a> </li><li class="dropdown-item"> <a href="/solutions/external-perimeter-and-api/" class> Защита внешнего периметра, Web и API </a> </li><li class="dropdown-item"> <a href="/solutions/incident-readiness/" class> Подготовка к инцидентам и восстановлению </a> </li><li class="dropdown-item"> <a href="/solutions/ransomware-and-downtime-risk/" class> Снижение риска ransomware и простоя </a> </li><li class="dropdown-item"> <a href="/solutions/regulatory-readiness/" class> Подготовка к требованиям регулятора и аудитора </a> </li><li class="dropdown-item"> <a href="/solutions/sensitive-data-protection/" class> Защита чувствительных данных </a> </li> </ul>  </li><li class="nav-item has-children">  <a href="/industries/" class="nav-link dropdown-trigger"> Отрасли <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/industries/" class="overview-link"> Все отрасли → </a> </li><li class="dropdown-item"> <a href="/industries/continuity-sensitive-organizations/" class> Организации, чувствительные к непрерывности процессов </a> </li><li class="dropdown-item"> <a href="/industries/credit-and-microfinance/" class> Кредитование и микрофинансирование </a> </li><li class="dropdown-item"> <a href="/industries/crypto-casp/" class> Криптоактивы / CASP </a> </li><li class="dropdown-item"> <a href="/industries/data-intensive-businesses/" class> Бизнесы с интенсивным использованием данных </a> </li><li class="dropdown-item"> <a href="/industries/payments-and-e-money/" class> Платежи и электронные деньги </a> </li> </ul>  </li><li class="nav-item has-children">  <a href="/services/" class="nav-link dropdown-trigger"> Услуги <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/services/" class="overview-link"> Все услуги → </a> </li><li class="dropdown-item"> <a href="/services/cloud-and-iam-security-assessment/" class> Оценка безопасности Cloud и IAM </a> </li><li class="dropdown-item"> <a href="/services/external-pentest/" class> Внешний пентест </a> </li><li class="dropdown-item"> <a href="/services/incident-response-readiness-review/" class> Обзор готовности к реагированию на инциденты </a> </li><li class="dropdown-item"> <a href="/services/internal-network-assessment/" class> Оценка внутренней сети </a> </li><li class="dropdown-item"> <a href="/services/personal-data-protection-readiness-review/" class> Обзор готовности к защите персональных данных </a> </li><li class="dropdown-item"> <a href="/services/regulatory-readiness-assessment/" class> Оценка регуляторной готовности </a> </li><li class="dropdown-item"> <a href="/services/security-architecture-review/" class> Обзор архитектуры безопасности </a> </li><li class="dropdown-item"> <a href="/services/social-engineering-assessment/" class> Оценка методами социальной инженерии </a> </li><li class="dropdown-item"> <a href="/services/web-and-api-security-testing/" class> Тестирование безопасности Web и API </a> </li> </ul>  </li><li class="nav-item "> <a href="/methodology/" class="nav-link"> Методология </a> </li><li class="nav-item "> <a href="/deliverables/" class="nav-link"> Deliverables </a> </li><li class="nav-item "> <a href="/about/" class="nav-link"> О компании </a> </li><li class="nav-item "> <a href="/contacts/" class="nav-link"> Контакты </a> </li> </ul> </nav> </div> </header> <main id="content">  <section class="container hero"> <div class="hero-copy"> <h1>Обзор архитектуры безопасности</h1> <p>Глубокий обзор критичных интеграций, компонентов, trust boundaries и control design.</p> <div class="cta-row"> <a class="btn-cyber btn-primary" href="/contacts/"> Запросить scope </a> </div> <p class="trust-note">Обзор не создает публичных claims о compliance или официальном статусе.</p> </div> </section> <section class="container detail-shell"> <article> <section class="section"> <h2>Когда нужна</h2> <p class="lead">Когда нужен анализ критичных интеграций, компонентов и дизайна механизмов контроля.</p> </section> <section class="section"> <h2>Область оценки</h2> <ul class="detail-list"> <li>architecture and integration review</li><li>security control logic</li><li>trust boundaries and systemic weaknesses</li><li>selected config/code/process observations</li> </ul> </section> <section class="section"> <h2>Как проходит работа</h2> <ul class="detail-list"> <li>context intake</li><li>architecture review</li><li>risk workshop</li><li>recommendations</li><li>decision support</li> </ul> </section> <section class="section"> <h2>Что получает клиент</h2> <ul class="detail-list"> <li>architecture risk view</li><li>systemic remediation recommendations</li><li>decision support for leadership and technical owners</li> </ul> </section> <section class="section longform"> <h2 id="когда-проблема-не-в-отдельной-уязвимости-а-в-устройстве-системы">Когда проблема не в отдельной уязвимости, а в устройстве системы</h2>
+<p>Пентест находит конкретные дефекты: этот сервис уязвим, эта роль избыточна,
+этот эндпоинт не проверяет права. Но существует класс проблем, который не
+виден при точечной проверке, потому что каждый отдельный компонент формально в
+порядке — а опасность возникает из того, как они соединены. Доверие между
+сервисами, выстроенное «по историческим причинам»; механизм аутентификации,
+который можно обойти не взломом, а легитимным маршрутом через соседнюю систему;
+контроль, который есть на схеме, но нигде фактически не применяется. Это
+дефекты дизайна, и закрывать их патчами бесполезно — они воспроизводятся в
+каждом новом компоненте, построенном по той же логике.</p>
+<p>Обзор архитектуры безопасности отвечает на вопрос, который точечная проверка не
+задает: устроена ли система так, чтобы быть защищаемой в принципе. Это самая
+«ранняя» и часто самая рентабельная форма работы: исправить архитектурное
+решение на этапе обзора дешевле, чем годами закрывать порождаемые им уязвимости
+и объяснять их аудиторам и партнерам.</p>
+<h2 id="что-оценивается">Что оценивается</h2>
+<p>Обзор ведется преимущественно в режиме белого ящика — с максимальным контекстом,
+потому что предмет анализа не поверхность, а замысел:</p>
+<ul>
+<li><strong>Архитектура и интеграции.</strong> Как устроены критичные потоки данных и
+доверие между компонентами, где проходят границы доверия (trust boundaries)
+и совпадают ли они с реальными границами контроля.</li>
+<li><strong>Логика механизмов контроля.</strong> Как спроектированы аутентификация,
+авторизация, изоляция, журналирование и обработка секретов; работают ли эти
+механизмы согласованно или каждый компонент решает задачу по-своему.</li>
+<li><strong>Границы доверия и системные слабости.</strong> Какие компоненты доверяют друг
+другу без проверки, где компрометация одного узла автоматически означает
+компрометацию других, где отсутствует изоляция отказа.</li>
+<li><strong>Выборочные наблюдения по конфигурации, коду и процессам.</strong> Точечное
+углубление там, где архитектурная гипотеза требует подтверждения на уровне
+реализации.</li>
+</ul>
+<p>Опорные рамки — NIST Cybersecurity Framework для оценки зрелости и
+полноты контролей и уровни верификации OWASP ASVS как ориентир того,
+какой глубины защита ожидается от системы данного класса. MITRE ATT&amp;CK
+используется, чтобы связать архитектурные слабости с реальными тактиками
+атакующих.</p>
+<h2 id="как-проходит-работа">Как проходит работа</h2>
+<p>Обзор начинается со сбора контекста: архитектурные схемы, описание критичных
+потоков, модель угроз (если она есть), ключевые решения и их обоснование. Все
+материалы передаются через согласованный защищенный канал вне сайта. Далее —
+собственно анализ архитектуры и рабочая сессия по рискам (risk workshop) с
+техническими владельцами: обзор устроен как совместная работа, а не как
+вынесение приговора извне, потому что качественная архитектурная рекомендация
+требует понимания ограничений и компромиссов, в которых система создавалась.
+Обзор не создает публичных заявлений о соответствии или официальном статусе —
+он дает картину рисков и обоснованные рекомендации.</p>
+<h2 id="типичные-классы-находок-и-их-значение-для-бизнеса">Типичные классы находок и их значение для бизнеса</h2>
+<ul>
+<li><strong>Избыточное доверие между сервисами.</strong> Компрометация периферийного
+компонента открывает доступ к ядру, потому что ядро ему безоговорочно верит.</li>
+<li><strong>Размытые границы доверия.</strong> Данные пересекают границу между зонами разной
+критичности без проверки, что превращает частную ошибку в системную.</li>
+<li><strong>Несогласованные механизмы контроля.</strong> Аутентификация и авторизация
+реализованы по-разному в разных компонентах — устойчивый источник дыр на
+стыках.</li>
+<li><strong>Отсутствие изоляции отказа.</strong> Нет разделения, которое удержало бы инцидент
+в границах одного компонента; любой сбой становится общесистемным.</li>
+<li><strong>Контроль «на бумаге».</strong> Механизм описан в документации, но фактически не
+применяется или применяется частично — ложное чувство защищенности.</li>
+<li><strong>Архитектурная невозможность аудита.</strong> Система не проектировалась под
+наблюдаемость, поэтому доказать регулятору или партнеру корректность работы
+контролей нечем.</li>
+</ul>
+<p>Каждое наблюдение переводится на язык решений: что это значит для устойчивости
+бизнеса, какой сценарий за этим стоит и в каком горизонте это стоит менять.</p>
+<h2 id="remediation-и-decision-support">Remediation и decision support</h2>
+<p>Результат обзора — не список задач для разработчиков, а карта архитектурных
+рисков с системными рекомендациями и поддержкой решений (decision support) для
+руководства и технических владельцев. Мы разделяем то, что можно улучшить
+локально, и то, что требует изменения архитектурного подхода, и помогаем
+расставить приоритеты с учетом стоимости, сроков и бизнес-ценности. Обзор
+архитектуры хорошо сочетается с <a href="/services/cloud-and-iam-security-assessment/">оценкой облака и IAM</a>
+и <a href="/services/internal-network-assessment/">оценкой внутренней сети</a>, которые
+проверяют, как замысел работает на практике. Состав отчетных материалов — на
+странице <a href="/deliverables/">deliverables</a>.</p>
+<h2 id="регуляторный-и-отраслевой-контекст">Регуляторный и отраслевой контекст</h2>
+<p>Для кредитных и микрофинансовых организаций и поставщиков услуг криптоактивов
+архитектурная устойчивость — основа доверия партнеров и надзорных ожиданий: ЦБ
+РА подчеркивает требования к операционной устойчивости финансовых участников,
+а сектор криптоактивов работает под лицензированием и надзором ЦБ.
+Для организаций, чувствительных к непрерывности, обоснованная
+архитектура изоляции отказа напрямую снижает риск общесистемного простоя.
+Обзор помогает подготовиться к проверкам и предметному разговору с аудиторами и
+партнерами, но не является юридическим заключением или сертификацией
+соответствия.</p>
+<h2 id="источники">Источники</h2>
+<ul>
+<li>NIST Cybersecurity Framework —
+<a href="https://www.nist.gov/cyberframework">nist.gov/cyberframework</a></li>
+<li>OWASP Application Security Verification Standard —
+<a href="https://owasp.org/www-project-application-security-verification-standard/">owasp.org/www-project-application-security-verification-standard</a></li>
+<li>MITRE ATT&amp;CK — <a href="https://attack.mitre.org/">attack.mitre.org</a></li>
+<li>Требования ЦБ РА к платежным организациям —
+<a href="https://www.cba.am/en/payment-organizations-licensing">cba.am</a></li>
+<li>ЦБ РА о поставщиках услуг криптоактивов —
+<a href="https://www.cba.am/en/crypto-asset-service-providers/">cba.am</a></li>
+</ul>
+<blockquote>
+<p>Любой обзор готовности, оценка, пентест или обзор архитектуры проводится
+только в согласованном объёме (scope) и в соответствии с правилами
+взаимодействия (ROE). Выводы и рекомендации относятся к согласованному
+объёму проверки и моменту её проведения.</p>
+</blockquote> </section> </article> <div class="detail-sidebar card-cyber"> <div class="card-risk-level success">scope first</div> <h2>Следующий шаг</h2> <p>
+Кратко опишите задачу и ограничения. Не отправляйте секреты или proof
+        assets до согласования защищенного канала.
+</p> <div class="cta-row"> <a class="btn-cyber btn-primary" href="/contacts/"> Запросить scope </a> </div> </div> </section>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div> <strong>AmiSoft</strong> <p>Кибербезопасность и защита данных для компаний в Армении.</p> </div> <div class="footer-links" aria-label="Нижняя навигация"> <a href="/methodology/">Методология</a> <a href="/deliverables/">Deliverables</a> <a href="/contacts/">Контакты</a> <a class="contact-email" href="mailto:info@amisoft.am">info@amisoft.am</a> </div> </div> </footer> <script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DKTye1Qc.js"></script> </body> </html>

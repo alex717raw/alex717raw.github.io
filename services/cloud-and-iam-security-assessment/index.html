@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Подключение шрифтов Outfit и JetBrains Mono из Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><meta name="description" content="Оценка cloud configuration, IAM, privileged access и secret handling без подключения внешних SDK сайта."><meta name="robots" content="index,follow"><link rel="canonical" href="https://amisoft.am/services/cloud-and-iam-security-assessment/"><link rel="alternate" hreflang="ru" href="https://amisoft.am/services/cloud-and-iam-security-assessment/"><link rel="alternate" hreflang="x-default" href="https://amisoft.am/services/cloud-and-iam-security-assessment/"><meta property="og:title" content="Оценка безопасности Cloud и IAM - AmiSoft"><meta property="og:description" content="Оценка cloud configuration, IAM, privileged access и secret handling без подключения внешних SDK сайта."><meta property="og:type" content="website"><meta property="og:url" content="https://amisoft.am/services/cloud-and-iam-security-assessment/"><title>Оценка безопасности Cloud и IAM - AmiSoft</title><link rel="stylesheet" href="/_astro/BaseLayout.CGlU92Rh.css"></head> <body> <a class="skip-link" href="#content">Перейти к содержанию</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="AmiSoft главная"> <span class="brand-mark" aria-hidden="true">A</span> <span>AmiSoft</span> </a> <button class="mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false" id="menuToggle"> <span class="hamburger-bar"></span> <span class="hamburger-bar"></span> <span class="hamburger-bar"></span> </button> <nav class="nav" id="mainNav" aria-label="Основная навигация"> <ul class="nav-list"> <li class="nav-item "> <a href="/" class="nav-link"> Главная </a> </li><li class="nav-item has-children">  <a href="/solutions/" class="nav-link dropdown-trigger"> Решения <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/solutions/" class="overview-link"> Все решения → </a> </li><li class="dropdown-item"> <a href="/solutions/cloud-and-critical-access/" class> Защита критичных доступов, облака и IAM </a> </li><li class="dropdown-item"> <a href="/solutions/external-perimeter-and-api/" class> Защита внешнего периметра, Web и API </a> </li><li class="dropdown-item"> <a href="/solutions/incident-readiness/" class> Подготовка к инцидентам и восстановлению </a> </li><li class="dropdown-item"> <a href="/solutions/ransomware-and-downtime-risk/" class> Снижение риска ransomware и простоя </a> </li><li class="dropdown-item"> <a href="/solutions/regulatory-readiness/" class> Подготовка к требованиям регулятора и аудитора </a> </li><li class="dropdown-item"> <a href="/solutions/sensitive-data-protection/" class> Защита чувствительных данных </a> </li> </ul>  </li><li class="nav-item has-children">  <a href="/industries/" class="nav-link dropdown-trigger"> Отрасли <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/industries/" class="overview-link"> Все отрасли → </a> </li><li class="dropdown-item"> <a href="/industries/continuity-sensitive-organizations/" class> Организации, чувствительные к непрерывности процессов </a> </li><li class="dropdown-item"> <a href="/industries/credit-and-microfinance/" class> Кредитование и микрофинансирование </a> </li><li class="dropdown-item"> <a href="/industries/crypto-casp/" class> Криптоактивы / CASP </a> </li><li class="dropdown-item"> <a href="/industries/data-intensive-businesses/" class> Бизнесы с интенсивным использованием данных </a> </li><li class="dropdown-item"> <a href="/industries/payments-and-e-money/" class> Платежи и электронные деньги </a> </li> </ul>  </li><li class="nav-item has-children">  <a href="/services/" class="nav-link dropdown-trigger"> Услуги <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/services/" class="overview-link"> Все услуги → </a> </li><li class="dropdown-item"> <a href="/services/cloud-and-iam-security-assessment/" class> Оценка безопасности Cloud и IAM </a> </li><li class="dropdown-item"> <a href="/services/external-pentest/" class> Внешний пентест </a> </li><li class="dropdown-item"> <a href="/services/incident-response-readiness-review/" class> Обзор готовности к реагированию на инциденты </a> </li><li class="dropdown-item"> <a href="/services/internal-network-assessment/" class> Оценка внутренней сети </a> </li><li class="dropdown-item"> <a href="/services/personal-data-protection-readiness-review/" class> Обзор готовности к защите персональных данных </a> </li><li class="dropdown-item"> <a href="/services/regulatory-readiness-assessment/" class> Оценка регуляторной готовности </a> </li><li class="dropdown-item"> <a href="/services/security-architecture-review/" class> Обзор архитектуры безопасности </a> </li><li class="dropdown-item"> <a href="/services/social-engineering-assessment/" class> Оценка методами социальной инженерии </a> </li><li class="dropdown-item"> <a href="/services/web-and-api-security-testing/" class> Тестирование безопасности Web и API </a> </li> </ul>  </li><li class="nav-item "> <a href="/methodology/" class="nav-link"> Методология </a> </li><li class="nav-item "> <a href="/deliverables/" class="nav-link"> Deliverables </a> </li><li class="nav-item "> <a href="/about/" class="nav-link"> О компании </a> </li><li class="nav-item "> <a href="/contacts/" class="nav-link"> Контакты </a> </li> </ul> </nav> </div> </header> <main id="content">  <section class="container hero"> <div class="hero-copy"> <h1>Оценка безопасности Cloud и IAM</h1> <p>Оценка cloud configuration, IAM, privileged access и secret handling без подключения внешних SDK сайта.</p> <div class="cta-row"> <a class="btn-cyber btn-primary" href="/contacts/"> Запросить scope </a> </div> <p class="trust-note">Доступы и материалы передаются только через согласованный защищенный канал вне сайта.</p> </div> </section> <section class="container detail-shell"> <article> <section class="section"> <h2>Когда нужна</h2> <p class="lead">Когда риски завязаны на облачную конфигурацию, роли, привилегии, секреты и identity controls.</p> </section> <section class="section"> <h2>Область оценки</h2> <ul class="detail-list"> <li>roles and privilege model</li><li>secret handling</li><li>MFA and access gaps</li><li>cloud misconfiguration and escalation paths</li> </ul> </section> <section class="section"> <h2>Как проходит работа</h2> <ul class="detail-list"> <li>scope definition</li><li>configuration review</li><li>access-path analysis</li><li>risk map</li><li>hardening actions</li> </ul> </section> <section class="section"> <h2>Что получает клиент</h2> <ul class="detail-list"> <li>IAM/cloud risk map</li><li>priority hardening actions</li><li>architecture-level observations</li> </ul> </section> <section class="section longform"> <h2 id="идентичность-стала-новым-периметром">Идентичность стала новым периметром</h2>
+<p>Когда инфраструктура переезжает в облако, привычная граница «внутри сети —
+снаружи» растворяется. Больше нет единого шлюза, за которым спрятано всё
+важное: ресурсы доступны через API, а право доступа определяется не тем, из
+какой сети пришел запрос, а тем, чья учетная запись и какая роль за ним стоят.
+В этой модели периметром становится идентичность (identity), а главным
+источником риска — не «дыра в файрволе», а неверно назначенная роль, забытый
+ключ доступа или сервисная учетная запись с правами, которых ей никто
+осознанно не выдавал.</p>
+<p>Статистика облачных инцидентов из года в год указывает на одно и то же:
+подавляющее большинство серьезных компрометаций в облаке — это не эксплуатация
+уязвимости провайдера, а ошибка конфигурации на стороне клиента. Открытое
+хранилище, чрезмерно широкая роль, утекший в репозиторий ключ, отсутствие
+второго фактора у административной учетной записи. Оценка безопасности облака и
+IAM отвечает на вопрос, который в облачной модели важнее любого сканирования
+портов: кто и что реально может сделать в вашей инфраструктуре — и что
+произойдет, если одна учетная запись окажется скомпрометирована.</p>
+<h2 id="что-оценивается">Что оценивается</h2>
+<p>Работа сфокусирована на конфигурации облака и модели управления доступом в
+согласованном объёме:</p>
+<ul>
+<li><strong>Модель ролей и привилегий.</strong> Кто и какими правами обладает, насколько они
+соответствуют принципу минимальных полномочий, где накопились избыточные,
+унаследованные или «временные, ставшие постоянными» права.</li>
+<li><strong>Обращение с секретами.</strong> Где хранятся ключи API, токены, пароли сервисных
+учетных записей; ротируются ли они; не утекли ли в репозитории, образы
+контейнеров, переменные окружения или журналы.</li>
+<li><strong>Многофакторная аутентификация и разрывы доступа.</strong> Защищены ли
+привилегированные и административные входы вторым фактором, есть ли обходные
+пути, учетные записи без MFA, забытые механизмы доступа.</li>
+<li><strong>Ошибки конфигурации и пути эскалации.</strong> Публично доступные хранилища и
+сервисы, слишком широкие сетевые правила, цепочки прав, позволяющие из
+ограниченной роли получить полный контроль над окружением.</li>
+</ul>
+<p>Оценка опирается на структуру NIST Cybersecurity Framework как рамку
+зрелости контролей, использует классификацию тактик MITRE ATT&amp;CK для облачных
+сред и приоритизацию базовых мер по CIS Critical Security Controls.
+Мы описываем классы ошибок и их последствия, а не публикуем готовые
+сценарии захвата окружения.</p>
+<h2 id="как-проходит-работа">Как проходит работа</h2>
+<p>Оценка облака требует доступа к конфигурации, а иногда к учетным записям только
+для чтения. Всё это передается исключительно через согласованный защищенный
+канал вне сайта: сайт статичен и не принимает файлы, ключи или доступы. До
+начала работ письменно фиксируются объём (какие аккаунты, подписки, проекты
+входят в проверку), режим (обзор конфигурации, анализ путей доступа, при
+необходимости контролируемая проверка эскалации), ограничения и порядок
+обращения с обнаруженными секретами. Любые активные проверки ведутся с
+письменной авторизацией и в согласованных границах.</p>
+<p>Каждая значимая находка сопровождается доказательством и объяснением пути:
+не «роль X слишком широкая», а «через роль X учетная запись Y может получить
+доступ к данным Z» — с указанием, почему это возможно и как это исправить.</p>
+<h2 id="типичные-классы-находок-и-их-цена-для-бизнеса">Типичные классы находок и их цена для бизнеса</h2>
+<ul>
+<li><strong>Чрезмерно широкие роли и подстановочные права.</strong> Компрометация одной такой
+учетной записи означает контроль над всем окружением, а не над одним
+сервисом.</li>
+<li><strong>Утекшие или неротируемые секреты.</strong> Ключ доступа в публичном репозитории —
+это легитимный вход без взлома; атакующему не нужно преодолевать защиту.</li>
+<li><strong>Административный доступ без второго фактора.</strong> Один подобранный или
+украденный пароль открывает панель управления всей инфраструктурой.</li>
+<li><strong>Публично доступные хранилища данных.</strong> Ошибка в одной настройке доступа
+превращается в утечку персональных или финансовых данных со всеми
+регуляторными последствиями.</li>
+<li><strong>Цепочки эскалации привилегий.</strong> Отдельно безопасные права в комбинации
+дают путь от ограниченной роли к полному контролю — то, что не виден при
+проверке прав по одному.</li>
+<li><strong>Слепые зоны журналирования.</strong> Действия в облаке не фиксируются или логи не
+анализируются: инцидент обнаруживается постфактум по счету или по обращению
+клиента.</li>
+</ul>
+<p>По каждому классу отчет связывает техническую настройку с бизнес-риском: чьи
+данные под угрозой, какая функция может быть нарушена, какой сценарий давления
+за этим стоит.</p>
+<h2 id="remediation-и-retest">Remediation и retest</h2>
+<p>Итог — карта рисков IAM и облака с приоритизированным списком действий по
+укреплению: что закрыть немедленно (обычно это публичная экспозиция и утекшие
+секреты), что относится к наведению порядка в модели ролей, а что является
+архитектурным наблюдением для более крупной перестройки — на стыке с
+<a href="/services/security-architecture-review/">обзором архитектуры безопасности</a>.
+Рекомендации учитывают конкретную облачную платформу и зрелость команды. После
+исправлений критичные пути проверяются повторно (retest). Состав отчетных
+материалов — на странице <a href="/deliverables/">deliverables</a>.</p>
+<h2 id="регуляторный-и-отраслевой-контекст">Регуляторный и отраслевой контекст</h2>
+<p>Для платежных организаций и операторов электронных денег ЦБ РА подчеркивает
+ожидания в области кибербезопасности и операционной устойчивости, а
+облачная конфигурация и управление доступом — фундамент этой устойчивости. Для
+поставщиков услуг криптоактивов, работающих под надзором и лицензированием ЦБ,
+контроль привилегированного доступа критичен из-за кастодиальных
+рисков. Для бизнесов с интенсивной обработкой данных ошибка в облачном доступе
+— готовый сценарий инцидента по закону о персональных данных.
+Результаты помогают подготовиться к проверкам и партнерским аудитам, но не
+являются юридическим заключением о соответствии.</p>
+<h2 id="источники">Источники</h2>
+<ul>
+<li>NIST Cybersecurity Framework —
+<a href="https://www.nist.gov/cyberframework">nist.gov/cyberframework</a></li>
+<li>MITRE ATT&amp;CK — <a href="https://attack.mitre.org/">attack.mitre.org</a></li>
+<li>CIS Critical Security Controls —
+<a href="https://www.cisecurity.org/controls">cisecurity.org/controls</a></li>
+<li>Требования ЦБ РА к платежным организациям —
+<a href="https://www.cba.am/en/payment-organizations-licensing">cba.am</a></li>
+<li>ЦБ РА о поставщиках услуг криптоактивов —
+<a href="https://www.cba.am/en/crypto-asset-service-providers/">cba.am</a></li>
+<li>Закон РА «О защите персональных данных» —
+<a href="https://www.arlis.am/en/acts/117034">arlis.am</a></li>
+</ul>
+<blockquote>
+<p>Любой обзор готовности, оценка, пентест или обзор архитектуры проводится
+только в согласованном объёме (scope) и в соответствии с правилами
+взаимодействия (ROE). Выводы и рекомендации относятся к согласованному
+объёму проверки и моменту её проведения.</p>
+</blockquote> </section> </article> <div class="detail-sidebar card-cyber"> <div class="card-risk-level success">scope first</div> <h2>Следующий шаг</h2> <p>
+Кратко опишите задачу и ограничения. Не отправляйте секреты или proof
+        assets до согласования защищенного канала.
+</p> <div class="cta-row"> <a class="btn-cyber btn-primary" href="/contacts/"> Запросить scope </a> </div> </div> </section>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div> <strong>AmiSoft</strong> <p>Кибербезопасность и защита данных для компаний в Армении.</p> </div> <div class="footer-links" aria-label="Нижняя навигация"> <a href="/methodology/">Методология</a> <a href="/deliverables/">Deliverables</a> <a href="/contacts/">Контакты</a> <a class="contact-email" href="mailto:info@amisoft.am">info@amisoft.am</a> </div> </div> </footer> <script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DKTye1Qc.js"></script> </body> </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Подключение шрифтов Outfit и JetBrains Mono из Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><meta name="description" content="Как AmiSoft проводит контролируемые оценки безопасности: scoping, ROE, validation, reporting, remediation support и retest."><meta name="robots" content="index,follow"><link rel="canonical" href="https://amisoft.am/methodology/"><link rel="alternate" hreflang="ru" href="https://amisoft.am/methodology/"><link rel="alternate" hreflang="x-default" href="https://amisoft.am/methodology/"><meta property="og:title" content="Методология AmiSoft"><meta property="og:description" content="Как AmiSoft проводит контролируемые оценки безопасности: scoping, ROE, validation, reporting, remediation support и retest."><meta property="og:type" content="website"><meta property="og:url" content="https://amisoft.am/methodology/"><title>Методология AmiSoft</title><link rel="stylesheet" href="/_astro/BaseLayout.CGlU92Rh.css"></head> <body> <a class="skip-link" href="#content">Перейти к содержанию</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="AmiSoft главная"> <span class="brand-mark" aria-hidden="true">A</span> <span>AmiSoft</span> </a> <button class="mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false" id="menuToggle"> <span class="hamburger-bar"></span> <span class="hamburger-bar"></span> <span class="hamburger-bar"></span> </button> <nav class="nav" id="mainNav" aria-label="Основная навигация"> <ul class="nav-list"> <li class="nav-item "> <a href="/" class="nav-link"> Главная </a> </li><li class="nav-item has-children">  <a href="/solutions/" class="nav-link dropdown-trigger"> Решения <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/solutions/" class="overview-link"> Все решения → </a> </li><li class="dropdown-item"> <a href="/solutions/cloud-and-critical-access/" class> Защита критичных доступов, облака и IAM </a> </li><li class="dropdown-item"> <a href="/solutions/external-perimeter-and-api/" class> Защита внешнего периметра, Web и API </a> </li><li class="dropdown-item"> <a href="/solutions/incident-readiness/" class> Подготовка к инцидентам и восстановлению </a> </li><li class="dropdown-item"> <a href="/solutions/ransomware-and-downtime-risk/" class> Снижение риска ransomware и простоя </a> </li><li class="dropdown-item"> <a href="/solutions/regulatory-readiness/" class> Подготовка к требованиям регулятора и аудитора </a> </li><li class="dropdown-item"> <a href="/solutions/sensitive-data-protection/" class> Защита чувствительных данных </a> </li> </ul>  </li><li class="nav-item has-children">  <a href="/industries/" class="nav-link dropdown-trigger"> Отрасли <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/industries/" class="overview-link"> Все отрасли → </a> </li><li class="dropdown-item"> <a href="/industries/continuity-sensitive-organizations/" class> Организации, чувствительные к непрерывности процессов </a> </li><li class="dropdown-item"> <a href="/industries/credit-and-microfinance/" class> Кредитование и микрофинансирование </a> </li><li class="dropdown-item"> <a href="/industries/crypto-casp/" class> Криптоактивы / CASP </a> </li><li class="dropdown-item"> <a href="/industries/data-intensive-businesses/" class> Бизнесы с интенсивным использованием данных </a> </li><li class="dropdown-item"> <a href="/industries/payments-and-e-money/" class> Платежи и электронные деньги </a> </li> </ul>  </li><li class="nav-item has-children">  <a href="/services/" class="nav-link dropdown-trigger"> Услуги <svg class="dropdown-caret" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </a> <ul class="dropdown-menu"> <li class="dropdown-item"> <a href="/services/" class="overview-link"> Все услуги → </a> </li><li class="dropdown-item"> <a href="/services/cloud-and-iam-security-assessment/" class> Оценка безопасности Cloud и IAM </a> </li><li class="dropdown-item"> <a href="/services/external-pentest/" class> Внешний пентест </a> </li><li class="dropdown-item"> <a href="/services/incident-response-readiness-review/" class> Обзор готовности к реагированию на инциденты </a> </li><li class="dropdown-item"> <a href="/services/internal-network-assessment/" class> Оценка внутренней сети </a> </li><li class="dropdown-item"> <a href="/services/personal-data-protection-readiness-review/" class> Обзор готовности к защите персональных данных </a> </li><li class="dropdown-item"> <a href="/services/regulatory-readiness-assessment/" class> Оценка регуляторной готовности </a> </li><li class="dropdown-item"> <a href="/services/security-architecture-review/" class> Обзор архитектуры безопасности </a> </li><li class="dropdown-item"> <a href="/services/social-engineering-assessment/" class> Оценка методами социальной инженерии </a> </li><li class="dropdown-item"> <a href="/services/web-and-api-security-testing/" class> Тестирование безопасности Web и API </a> </li> </ul>  </li><li class="nav-item "> <a href="/methodology/" class="nav-link" aria-current="page"> Методология </a> </li><li class="nav-item "> <a href="/deliverables/" class="nav-link"> Deliverables </a> </li><li class="nav-item "> <a href="/about/" class="nav-link"> О компании </a> </li><li class="nav-item "> <a href="/contacts/" class="nav-link"> Контакты </a> </li> </ul> </nav> </div> </header> <main id="content">  <section class="container hero"> <div class="hero-copy"> <h1>Методология контролируемой проверки</h1> <p>Показываем disciplined, controlled and evidence-oriented approach без обещаний за пределами согласованного scope.</p> <div class="cta-row"> <a class="btn-cyber btn-primary" href="/contacts/"> Обсудить формат проверки </a> </div> <p class="trust-note">Любая offensive-like активность начинается только после письменной авторизации, согласованных правил и границ.</p> </div> </section> <section class="container section"> <h2>Scoping и rules of engagement</h2> <p class="lead">До работ фиксируются активы, временное окно, ограничения, роли и канал экстренной связи.</p> <ul class="detail-list"> <li>black / gray / white box как execution modes</li><li>authenticated и unauthenticated testing</li><li>assumed breach logic</li><li>production constraints</li> </ul> </section><section class="container section"> <h2>Validation и reporting</h2> <p class="lead">Критичные находки проверяются контролируемо, а выводы разделяются на управленческий и технический уровни.</p> <ul class="detail-list"> <li>reduction of false positives</li><li>executive and technical reporting</li><li>remediation support</li><li>retest after fixes</li> </ul> </section><section class="container section longform"> <h2 id="зачем-вообще-нужна-методология">Зачем вообще нужна методология</h2>
+<p>Разница между полезной оценкой безопасности и дорогим списком тревожных слов —
+это дисциплина процесса. Один и тот же инструментарий в руках двух команд дает
+несопоставимые результаты: без согласованной границы проверка задевает чужие
+системы, без валидации отчет наполняется ложными срабатываниями, без
+приоритизации заказчик получает сто пунктов «критично» и ни одного ответа, с
+чего начать. Наша методология построена на признанных рамках — OWASP WSTG,
+OWASP ASVS, OWASP API Security, NIST SP 800-115
+— и на принципе, который мы формулируем как «скальпель, а не кувалда»:
+точность и контроль важнее эффектности.</p>
+<h2 id="scoping-граница-которая-делает-выводы-осмысленными">Scoping: граница, которая делает выводы осмысленными</h2>
+<p>Каждый проект начинается с определения объёма (scope). До первого технического
+действия письменно фиксируются:</p>
+<ul>
+<li>перечень активов: домены, адреса, приложения, сегменты сети, облачные
+аккаунты — что входит в проверку, а что прямо исключено;</li>
+<li>временное окно работ и часы, в которые допустимы активные проверки;</li>
+<li>ограничения по методам: что разрешено, что требует отдельного согласования,
+что запрещено;</li>
+<li>роли и контакты с обеих сторон, включая канал экстренной связи, по которому
+работы можно остановить немедленно;</li>
+<li>правила обращения с активами третьих лиц: хостинг-провайдеры, SaaS-сервисы,
+партнерские интеграции не становятся целью только потому, что связаны с
+вашими системами.</li>
+</ul>
+<p>Такая граница — не бюрократия. Выводы оценки имеют смысл только относительно
+согласованного объёма и момента проведения: отчет отвечает за то, что
+проверялось, и честно говорит, что осталось за рамками.</p>
+<h2 id="письменная-авторизация-и-правила-взаимодействия-roe">Письменная авторизация и правила взаимодействия (ROE)</h2>
+<p>Ни один пентест, фишинговое упражнение или другая активность атакующего
+характера не начинается без письменной авторизации владельца систем. Это
+принципиальная позиция и требование законодательства Армении: недолжный доступ
+к компьютерной системе — уголовно наказуемое деяние (УК РА ст. 359, 363).
+Правила взаимодействия (ROE) дополняют авторизацию практикой: как мы
+уведомляем о начале и завершении, как эскалируем критичные находки, что
+происходит при обнаружении следов реальной компрометации, как обрабатываются
+и где хранятся собранные материалы. Данные клиента, результаты и сведения об
+инфраструктуре принадлежат клиенту: они не используются в демонстрациях, не
+передаются третьим лицам и не хранятся дольше необходимого.</p>
+<h2 id="режимы-исполнения-черный-серый-и-белый-ящик">Режимы исполнения: черный, серый и белый ящик</h2>
+<p>Black box, gray box и white box — это режимы исполнения одной и той же услуги,
+а не разные продукты. Выбор режима — это ответ на вопрос, какой сценарий вы
+хотите проверить:</p>
+<ul>
+<li><strong>Черный ящик</strong> моделирует внешнего атакующего без предварительных знаний.
+Максимально реалистичный старт, но значительная часть бюджета времени
+уходит на разведку.</li>
+<li><strong>Серый ящик</strong> добавляет ограниченный контекст: тестовые учетные записи,
+описание архитектуры, доступ к документации. За то же время проверка
+проходит глубже — режим, который мы чаще всего рекомендуем.</li>
+<li><strong>Белый ящик</strong> дает максимальную глубину: конфигурации, схемы, при
+необходимости исходный код. Применяется там, где цена пропущенной ошибки
+максимальна.</li>
+</ul>
+<p>Отдельная ось — <strong>аутентифицированное и неаутентифицированное тестирование</strong>.
+Проверка «снаружи без прав» отвечает на вопрос о случайном атакующем; проверка
+с валидными учетными записями — о недобросовестном пользователе или украденном
+пароле. Для приложений с личными кабинетами вторая часть обычно важнее первой.</p>
+<h2 id="assumed-breach-когда-стартовая-точка--внутри">Assumed breach: когда стартовая точка — внутри</h2>
+<p>Часть сценариев исходит из допущения, что периметр уже преодолен: фишинг
+сработал, подрядчик скомпрометирован, сотрудник ошибся. Логика assumed breach
+позволяет проверить то, что действительно определяет масштаб ущерба: возможна
+ли эскалация привилегий, как быстро атакующий доберется от рядовой рабочей
+станции до критичных систем, заметят ли его средства обнаружения. Такие
+работы всегда идут в согласованных границах и с оговоренной стартовой точкой.</p>
+<h2 id="ограничения-продакзена-и-контроль-воздействия">Ограничения продакзена и контроль воздействия</h2>
+<p>Если целевая среда критична к простою, публична или интегрирована с третьими
+сторонами, это усиливает дисциплину, а не отменяет ее. Проверки с риском
+отказа в обслуживании или порчи данных либо исключаются, либо выполняются
+только на копиях и стендах, либо согласуются отдельным пунктом с точным
+описанием воздействия. Мы не «ломаем прод», чтобы доказать точку зрения:
+доказательство строится минимально достаточным воздействием.</p>
+<h2 id="валидация-меньше-шума-больше-сигнала">Валидация: меньше шума, больше сигнала</h2>
+<p>Автоматизация ускоряет обследование, но не заменяет суждение. Каждая значимая
+находка проходит ручную валидацию: мы воспроизводим ее контролируемо,
+фиксируем доказательства и условия, при которых она эксплуатируема, и только
+затем присваиваем серьезность с учетом контекста бизнеса. Ложные срабатывания
+отсекаются до отчета, а не перекладываются на команду клиента. В отчете нет
+формулировок «возможно, уязвимость существует» — есть подтвержденные факты и
+явно помеченные ограничения проверки.</p>
+<h2 id="отчетность-два-уровня-одна-картина">Отчетность: два уровня, одна картина</h2>
+<p>Результат разделен на управленческий и технический слои — подробно о составе
+на странице <a href="/deliverables/">Deliverables</a>. Управленческое резюме объясняет,
+где реальный риск, что это значит для бизнеса и в каком порядке действовать.
+Технический отчет дает командам всё для воспроизведения и исправления:
+описание, доказательства, затронутые активы, сценарии атак и конкретные
+рекомендации, применимые в вашей инфраструктуре, а не «обновите всё».</p>
+<h2 id="поддержка-устранения-и-повторная-проверка">Поддержка устранения и повторная проверка</h2>
+<p>Отчет — не конец работы. Мы отвечаем на вопросы команд по ходу устранения,
+помогаем уточнить приоритеты, а после исправлений проводим retest критичных
+находок: повторную контролируемую проверку того, что сценарий атаки
+действительно закрыт. Именно retest превращает проект из «нашли проблемы» в
+«проблемы закрыты, и это подтверждено» — аргумент, который одинаково работает
+для руководства, аудитора и партнера.</p>
+<h2 id="источники">Источники</h2>
+<ul>
+<li>OWASP Web Security Testing Guide —
+<a href="https://owasp.org/www-project-web-security-testing-guide/">owasp.org/www-project-web-security-testing-guide</a></li>
+<li>OWASP Application Security Verification Standard —
+<a href="https://owasp.org/www-project-application-security-verification-standard/">owasp.org/www-project-application-security-verification-standard</a></li>
+<li>OWASP API Security Project —
+<a href="https://owasp.org/API-Security/">owasp.org/API-Security</a></li>
+<li>MITRE ATT&amp;CK — <a href="https://attack.mitre.org/">attack.mitre.org</a></li>
+<li>NIST SP 800-115 —
+<a href="https://csrc.nist.gov/pubs/sp/800/115/final">csrc.nist.gov/pubs/sp/800/115/final</a></li>
+</ul>
+<blockquote>
+<p>Любой обзор готовности, оценка, пентест или обзор архитектуры проводится
+только в согласованном объёме (scope) и в соответствии с правилами
+взаимодействия (ROE). Выводы и рекомендации относятся к согласованному
+объёму проверки и моменту её проведения.</p>
+</blockquote> </section> </main> <footer class="site-footer"> <div class="container footer-inner"> <div> <strong>AmiSoft</strong> <p>Кибербезопасность и защита данных для компаний в Армении.</p> </div> <div class="footer-links" aria-label="Нижняя навигация"> <a href="/methodology/">Методология</a> <a href="/deliverables/">Deliverables</a> <a href="/contacts/">Контакты</a> <a class="contact-email" href="mailto:info@amisoft.am">info@amisoft.am</a> </div> </div> </footer> <script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DKTye1Qc.js"></script> </body> </html>
